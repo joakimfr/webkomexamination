@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url(/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  
+}
+h2 {
+  font-weight: 500;
+}
+.addmovie-form {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.input-container {
+  display: flex;
+}
+aside {
+  height: 3rem;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+ /* background-color: red; */
+}
+aside input {
+  height: 5rem;
+  width:10rem;
+}
+
+#genre-input {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+}
+.add-btn {
+  outline: none;
+  padding: 10px 60px;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(229, 9, 20);
+  color: white;
+}
+.modal-btn {
+  position: absolute;
+  top: 90%;
+  left: 5%;
+  background-color: rgb(229, 9, 20);
+  padding: 10px 60px;
+  outline: none;
+  border: none;
+  border-radius: .3rem;
+  height: 2.5 rem;
+  color: white;
+}
+aside, p {
+ color: white;
+}
+/* POPUP CSS */
+.popup-container {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-color: white;
+  padding: 30px 30px 30px;
+  transform: translate(-50%, -50%) scale(0.1);
+  transition: transform 0.4s, top 0.4s;
+  visibility: hidden;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.show-popup {
+  top: 50%;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#popup-message {
+  text-align: center;
+}
+#popup-message p {
+  margin-top: 1rem;
+  color: black;
+}
+/* POPUP CSS */
+/* MOVIE MODAL CSS START */
+.movie-modal {
+  visibility: hidden; 
+  height: 100vh;
+  background: url(images/cinema.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+    
+}
+.show-modal {
+  visibility: visible;
+}
+
+header {
+  height: 8rem;
+  width: 100%;
+ 
+  display: flex;
+  justify-content: space-around;
+}
+
+header article {
+  width: 12rem;
+  
+  padding: 1rem;
+}
+header article p {
+  font-size: 14px;
+  padding: .2rem;
+}
+header h2 {
+  color: white;
+}
+header input {
+  height: 1.5rem;
+  width: 8rem;
+}
+header button {
+  width: 8rem;
+  border-radius: .3rem;
+}
+#form-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#modal-btn-close {
+  height: 2rem;
+  color: white;
+  margin-top: 2rem;
+  background-color: rgb(229, 9, 20);
+  
+}
+
+#movies-elem {
+  
+  max-height: 350px;
+  background-color: rgb(229, 9, 20, 0.6);
+  border-radius: 0.5rem;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  
+  overflow-x: hidden;
+  scrollbar-color: #FFD029;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background: black;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(229, 9, 20);
+  border-radius: 1rem;
+}
+.div-elem {
+  
+  padding: 1rem 1rem 1rem;
+  height: 8rem;
+  background-color: #333;
+  grid-column: auto / span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: .5rem;
+}
+.div-elem p {
+  color: white;
+}
+#remove-btn {
+  width: 10rem;
+  background-color: rgb(229, 9, 20);
+  height: 1.5rem;
+  border-radius: 0.3rem;
+  color: white;
+}
+
+
+

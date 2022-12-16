@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section>
+    <button class="modal-btn" id="modal-btn-show">Favorites</button>
+  <form class="addmovie-form" id="form-one">
+    <div class="input-container">
+    <aside>
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title-input">
+    </aside>
+    <aside>
+      <label for="">Genre</label>
+      <input type="text" name="genre" id="genre-input">
+    </aside>
+    <aside>
+      <label for="">Release date</label>
+      <input type="date" name="date" id="date-input">
+    </aside>
+  </div>
+    <div class="btn-container">
+    <button type="submit" class="add-btn">Add movie</button>
+    </div>
+</form>
+
+  <div class="popup-container" id="popup">
+    <div id="popup-message"></div>
+    <button class="add-btn" type="button" id="closePopup">Go back</button>
+  </div>
+
+  <div class="movie-modal" id="movieModal">
+  
+  <header class="container-two">
+    <button id="modal-btn-close">Go back</button>
+    <form id="form-two">
+      <h2>Search for a movie</h2>
+      <input type="text" name="title" id="search-input">
+      <button id="search-button" type="submit">Search</button>
+    </form>
+    <article id="search-message"></article>
+  </header>
+  <article>
+    <div id="movies-elem"></div>
+  </article>
+</div>
+</section>
+
+<script type="module" src="js/script.js"></script>
+</body>
+</html>
