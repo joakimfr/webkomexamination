@@ -70,13 +70,13 @@ function addClickEvent() {
 async function checkIfMovieExist(obj) {
   try {
       const titleQuery = query(collection(db, 'movies'), where('title', '==', obj.title));
-      console.log(obj.title)
+      
       const result = await getDocs(titleQuery);
       let resultTitle = {};
 
       result.forEach((title) => {
           resultTitle = title;
-          console.log(resultTitle);
+          
       });
      
       return resultTitle;
@@ -90,7 +90,7 @@ async function handleTitles(obj) {
   const title = await checkIfMovieExist(obj);
   
   const titleId = title.id;
-  console.log(titleId)
+  
   if (titleId) {
     const elem = `
   
